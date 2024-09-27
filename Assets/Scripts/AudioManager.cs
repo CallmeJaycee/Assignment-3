@@ -4,59 +4,32 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioSource introMusic;
-    public AudioSource ghostNormalMusic;
-    public AudioSource ghostScaredMusic;
-    public AudioSource ghostDeadMusic;
-    public AudioSource pacStudentMoveSound;
-    public AudioSource pelletEatenSound;
-    public AudioSource wallCollisionSound;
-    public AudioSource pacStudentDeathSound;
+    public AudioSource introMusic;       
+    public AudioSource mainBackgroundMusic; 
 
     void Start()
     {
-        
-        introMusic.Play();
-        PlayGhostNormalMusic();
-        
+        if (introMusic != null)
+        {
+            introMusic.Play();
+            StartCoroutine(PlayMainBackgroundAfterIntro());
+        }
+        else
+        {
+            Debug.LogWarning("Intro music is not assigned.");
+        }
     }
-
-    public void PlayGhostNormalMusic()
+    private System.Collections.IEnumerator PlayMainBackgroundAfterIntro()
     {
-        ghostNormalMusic.Play();
-        ghostScaredMusic.Stop();
-        ghostDeadMusic.Stop();
-    }
-
-    public void PlayGhostScaredMusic()
-    {
-        ghostScaredMusic.Play();
-        ghostNormalMusic.Stop();
-    }
-
-    public void PlayGhostDeadMusic()
-    {
-        ghostDeadMusic.Play();
-        ghostNormalMusic.Stop();
-    }
-
-    public void PlayPacStudentMoveSound()
-    {
-        pacStudentMoveSound.Play();
-    }
-
-    public void PlayPelletEatenSound()
-    {
-        pelletEatenSound.Play();
-    }
-
-    public void PlayWallCollisionSound()
-    {
-        wallCollisionSound.Play();
-    }
-
-    public void PlayPacStudentDeathSound()
-    {
-        pacStudentDeathSound.Play();
+        yield return new WaitForSeconds(introMusic.clip.length);
+        if (mainBackgroundMusic != null)
+        {
+            mainBackgroundMusic.Play();
+        }
+        else
+        {
+            Debug.LogWarning("Main background music is not assigned.");
+        }
     }
 }
+
