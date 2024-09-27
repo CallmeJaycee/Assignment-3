@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -324,7 +324,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      YellowGhost_0: -443480061153203788
+      YellowGhost_1: -5341436780852921871
+      YellowGhost_2: -6933825659924655791
+      YellowGhost_3: 2424512770321063792
+      YellowGhost_4: -7058183646978909972
+      YellowGhost_5: 7027828912946129424
+      YellowGhost_6: 376868044109457751
+      YellowGhost_7: -2396108732603678593
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
