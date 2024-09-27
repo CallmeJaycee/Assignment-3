@@ -54,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 8
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -132,12 +132,12 @@ TextureImporter:
       name: Pellet&PowerPellet (2)_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 14
-        width: 5
-        height: 5
+        x: 0
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: Pellet&PowerPellet (2)_1
       rect:
         serializedVersion: 2
-        x: 44
-        y: 13
-        width: 7
-        height: 7
+        x: 32
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -174,18 +174,18 @@ TextureImporter:
       name: Pellet&PowerPellet (2)_2
       rect:
         serializedVersion: 2
-        x: 76
-        y: 13
-        width: 7
-        height: 7
+        x: 64
+        y: 0
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e36cebffdf0243c478d91cf8b9f09023
+      spriteID: 3e83a5a7d25a384439ba3f6deaa88cfe
       internalID: 1227613859
       vertices: []
       indices: 
